@@ -2,7 +2,7 @@
 
 **Autor:** Leandro Raúl Ferrero
 
-Este repositorio contiene el código fuente de la PFO 2 de programación sobre redes. El proyecto implementa una arquitectura cliente-servidor en Python. El servidor es una API REST construida con Flask que maneja la persistencia de datos mediante SQLite, asegura las credenciales utilizando la librería `werkzeug.security` y protege el acceso a rutas mediante el manejo de sesiones (`session`). El cliente es un script de consola que mantiene la sesión activa con `requests.Session` para interactuar con los endpoints HTTP de registro, login y visualización de recursos.
+Este repositorio contiene el código fuente de la PFO 2 de programación sobre redes. El proyecto implementa una arquitectura cliente-servidor en Python. El servidor es una API REST construida con Flask que maneja la persistencia de datos mediante SQLite, asegura las credenciales utilizando la librería `werkzeug.security` y protege el acceso a rutas mediante el manejo de sesiones con `session`. El cliente es un script de consola que mantiene la sesión activa con `requests.Session` para interactuar con los endpoints HTTP de registro, login y visualización de la vista de tareas.
 
 ## Instrucciones de Ejecución
 
@@ -43,18 +43,23 @@ Utilizar el menú numérico para registrar usuarios, iniciar sesión o consultar
 ## Capturas de Pantalla de Pruebas Exitosas
 
 **1. Registro de un nuevo usuario (POST /registro)**
+
 ![Captura Registro](capturas/registrar-usuario.png)
 
 **2. Inicio de sesión exitoso (POST /login)**
+
 ![Captura Login](capturas/iniciar-sesion.png)
 
 **3. Petición GET al endpoint /tareas (sin iniciar sesión)**
+
 ![Captura Tareas No Autorizado](capturas/tareas-no-autenticado.png)
 
 **4. Petición GET al endpoint /tareas (con sesión iniciada)**
+
 ![Captura Tareas](capturas/html-bienvenida-autenticado.png)
 
 **4. Registro de Logs**
+
 ![Captura Logs del Servidor](capturas/logs-servidor.png)
 
 ---
