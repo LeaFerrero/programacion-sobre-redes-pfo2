@@ -56,7 +56,7 @@ Utilizar el menú numérico para registrar usuarios, iniciar sesión o consultar
 
 **4. Petición GET al endpoint /tareas (con sesión iniciada)**
 
-![Captura Tareas](capturas/html-bienvenida-autenticado.png)
+![Captura Tareas](capturas/tareas-autenticado.png)
 
 **4. Registro de Logs**
 
